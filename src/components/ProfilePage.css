@@ -8,7 +8,6 @@
   padding: 0 20px;
   background-size: cover;
   background-position: center;
-  background-image: url('/src/assets/hero-bg.jpg');
 }
 
 .top__inner {
@@ -70,7 +69,7 @@
   text-decoration: none;
   font-weight: 800;
   color: #111;
-  background: #fff;
+  background: transparent;
   transition: 0.25s;
 }
 
