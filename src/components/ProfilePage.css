@@ -110,6 +110,78 @@
   transform: scale(1.03);
 }
 
+/* ===== ABOUT ===== */
+
+.sectionTitle {
+  font-size: 34px;
+  margin: 0 0 14px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+
+.sectionTitle span {
+  color: #f47115;
+}
+.about {
+  padding: 100px 10%;
+/
+}
+
+.about__box {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  background: #fff;
+  padding: 48px;
+  border-radius: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.about__text p {
+  font-size: 16px;
+  line-height: 2;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.about__infoRow {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.about__item {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 20px 18px;
+  text-align: left;
+  transition: 0.25s;
+}
+
+.about__item:hover {
+  transform: translateY(-4px);
+}
+
+.about__icon {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.about__item h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #f47115;
+}
+
+.about__item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #333;
+}
 /* ===== CONTACT ===== */
 .contact {
   padding: 80px 10%;
@@ -172,6 +244,24 @@
 
   .top__btns {
     justify-content: center;
+  }
+
+  .about {
+    padding: 80px 20px;
+  }
+
+  .about__box {
+    padding: 28px 20px;
+  }
+
+  .about__text p {
+    font-size: 15px;
+    line-height: 1.9;
+  }
+
+  .about__infoRow {
+    grid-template-columns: 1fr;
+    gap: 14px;
   }
   .contact {
     padding: 80px 10%;

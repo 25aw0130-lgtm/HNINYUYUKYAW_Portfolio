@@ -72,7 +72,7 @@ export default function Projects() {
 
               <div className="projectButtons">
                 <Link className="btn demoBtn" to={`/project/${p.slug}`}>
-                  詳しく見る
+                  もっと見る
                 </Link>
               </div>
             </div>

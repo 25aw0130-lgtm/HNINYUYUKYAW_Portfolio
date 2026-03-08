@@ -1,8 +1,6 @@
 import React from "react";
 import "./ProfilePage.css";
-
 import Navbar from "./Navbar";
-import AboutCards from "./AboutCards";
 import Skills from "./Skills";
 import Projects from "./Projects";
 
@@ -43,9 +41,70 @@ export default function ProfilePage() {
           </div>
         </section>
 
-        {/* ===== ABOUT ===== */}
-        <AboutCards />
+       {/* ===== ABOUT ===== */}
+<section className="about" id="about">
+  <h2 className="sectionTitle">
+    About <span>Me</span>
+  </h2>
 
+  <div className="about__box">
+
+    {/* Left text */}
+    <div className="about__text">
+      <p>
+        私は、ユーザー視点を大切にしたフロントエンド開発を強みとするフロントエンドエンジニアです。
+        日本に来た理由は、日本の高い技術力とものづくり文化に強い尊敬の気持ちを抱いていたからです。
+        より成長できる環境で自分を試したいという思いから、新しい言語や文化の中に飛び込みました。
+      </p>
+
+      <p>
+        もともとオンラインショッピングアプリやWebサイトを利用することが好きで、
+        「どうしてこんなに使いやすいのだろう」「この画面はどのように作られているのだろう」
+        と興味を持つようになりました。利用者として楽しむだけでなく、
+        「私も人をワクワクさせるサービスを作りたい」と思ったことが、
+        Webデザイン科を選んだきっかけです。
+        母国の大学ではWebとは異なる分野を学んでいましたが、
+        本当にやりたいことに正直になり、新しい分野へ挑戦する決意をしました。
+        異分野からのスタートでしたが、行動力を持って学び続け、
+        着実にスキルを身につけてきました。
+      </p>
+    </div>
+
+    <div className="about__infoRow">
+      <div className="about__item">
+        <span className="about__icon">🎓</span>
+        <div>
+          <h3>School</h3>
+          <p>日本電子専門学校</p>
+        </div>
+      </div>
+
+      <div className="about__item">
+        <span className="about__icon">💻</span>
+        <div>
+          <h3>Department</h3>
+          <p>Webデザイン科</p>
+        </div>
+      </div>
+
+      <div className="about__item">
+        <span className="about__icon">⚡</span>
+        <div>
+          <h3>Strength</h3>
+          <p>行動力・コミュニケーション力</p>
+        </div>
+      </div>
+
+      <div className="about__item">
+        <span className="about__icon">🌏</span>
+        <div>
+          <h3>Language</h3>
+          <p>日本語 / English</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
         {/* ===== SKILLS ===== */}
         <Skills />
 
