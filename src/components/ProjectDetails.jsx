@@ -1,57 +1,149 @@
+
 import { useParams, Link } from "react-router-dom";
 import "./ProjectDetails.css";
 
 const projects = [
   {
     slug: "kikkoman-recipe",
-    title: "Kikkoman Recipe",
-    desc: "カプセルを回して楽しくレシピと出会えるサイト。",
-    image: "/projects/recipe.png",
-    website: "https://recipe-own-media.vercel.app",
-
-    プロジェクトについて: `企画からUIデザイン、コーディングまでをすべて一人で制作しました。
-制作期間は約3ヶ月で、ユーザーにとって使いやすく楽しい体験になるよう試行錯誤を重ねながら完成させました。`,
-
-    問題: `日々の献立を考えることが負担になり、レパートリーが固定化してしまうという課題に着目しました。
-また、料理に対するモチベーションが下がることで、食事の時間そのものが楽しみではなくなる点も問題だと感じました。`,
-
-    ゴール: `「迷う時間を減らし、楽しく選べる体験」を設計することを目的としました。
-直感的な操作と動きのあるUIによって、ユーザーが自然に次のアクションへ進める構成を意識しました。`,
-
-    プロセス: [
-      "ターゲット設定（忙しい一人暮らし層）",
-      "ユーザーフロー設計（食材選択 → ガチャ演出 → レシピ表示）",
-      "ワイヤーフレーム制作",
-      "UIデザイン設計（視認性・余白・情報優先度）",
-      "JavaScriptによる状態管理・アニメーション実装",
-      "レスポンシブ対応（スマートフォン最適化）",
+    title: "「カプセルレシピ」Webサイト制作",
+    intro: (
+      <>
+        この作品は、献立に悩む一人暮らしの人や忙しい人に向けて、
+        楽しくレシピと出会える体験を目指して制作したWebサイトです。
+        日々の「何を作ろう？」という悩みに着目し、レシピ選びそのものを
+        ガチャのように楽しめるUIとして企画しました。
+        <br />
+        <br />
+        本作品では、
+        <span className="accent">企画・デザイン・実装のすべてを一人で担当</span>
+        し、親しみやすいビジュアルと直感的に操作しやすい導線を意識して制作しました。
+        また、見た目の楽しさだけでなく、結果がわかりやすく表示されるよう、
+        情報の見せ方や動きのバランスにも工夫しました。
+      </>
+    ),
+    period: "2025年◯月〜2025年◯月（約◯週間）",
+    role: "企画・UIデザイン・コーディング",
+    tools: [
+      "Figma",
+      "Photoshop",
+      "Illustrator",
+      "HTML",
+      "CSS",
+      "JavaScript",
     ],
+    mainImage: "/projects/recipe.png",
+    // sections: [
+    // {
+    //   title: "制作ポイント",
+    //   list: [
+    //     "ガチャのようにレシピを選べるUIで、料理選びを楽しい体験にしたこと",
+    //     "オレンジを基調にした配色で、親しみやすさと食欲を感じるデザインを意識したこと",
+    //     "見やすさと操作性のバランスを調整したこと"
+    //   ]
+    // },
 
-    主な機能: [
-      "食材選択型ガチャシステム",
-      "ガチャ演出アニメーション（ローディング表示・モーダル表示）",
-      "状態管理による画面切り替え制御",
-      "レスポンシブデザイン対応",
-    ],
 
-    solution: `ガチャ演出や画面切り替えの実装において、状態管理が複雑化しバグが発生しました。
-そのため、UIの状態を「選択中」「抽選中」「結果表示」と段階的に整理し、条件分岐を明確化することで安定した動作を実現しました。
-また、操作に迷わないようボタン配置や余白設計を調整し、視線誘導を意識したUI改善を行いました。`,
+    sections: [
+      {
+        title: "制作ポイント",
+        list: [
+          "ガチャを回すような楽しいUI設計",
+          "結果表示をわかりやすく整理",
+          "一人暮らしのユーザーを意識した設計"
+        ]
+      },
+      {
+        title: "リサーチ",
+        text: "献立を考えることに負担を感じている人や、毎回似たような料理になってしまう人を想定し、料理選びを前向きにできる仕組みを考えました。",
+        image: "/projects/recipe.png",
+        sections: [
+          {
+            subTitle: "ユーザビリティテスト",
+            text: "実際に画面を見てもらい、操作の分かりやすさや結果表示の見やすさについて確認しました。"
+          },
+          {
+            subTitle: "課題解決",
+            text: "ユーザーが迷わず次の行動に進めるよう、情報の優先順位を整理し、視線の流れを意識して導線を調整しました。"
+          },
+          {
+            subTitle: "振り返り",
+            text: "楽しさを重視したUIでも、使いやすさとのバランスが重要であることを学びました。"
+          }
 
-    learnings: `本制作を通して、見た目のデザインだけでなく「ユーザーが迷わない導線設計」が重要であることを学びました。
-動きのあるUIであっても、情報の優先順位と状態管理を整理することで、快適な体験を提供できると実感しました。`,
+        ]
+      },
+    
+      {
+        title: "UI Design",
+        text: "「楽しくレシピと出会える体験」をテーマにデザインしました。献立を考えることが負担になりがちな一人暮らしの人や忙しい人でも、ガチャを回すような感覚で料理を選べるようにすることで、料理選びそのものを楽しめる体験を目指しました。",
+      
+        image: "/projects/recipe.png",
+      
+        sections: [
+          {
+            subTitle: "レイアウト設計",
+            text: "トップページでは、ユーザーがすぐにガチャ機能にアクセスできるようにシンプルなレイアウトを採用しました。余計な情報を減らし、視線が自然に『ガチャ → レシピ結果』へ流れるように構成しています。"
+          },
+          {
+            subTitle: "UI表現",
+            text: "ガチャのアニメーションを取り入れることで、レシピを選ぶ行為そのものを楽しい体験にしました。ユーザーがクリックするたびに新しいレシピと出会える仕組みにすることで、料理への興味を高めることを意識しました。"
+          },
+          {
+            subTitle: "Color Design",
+            text: "料理サイトらしい温かさと楽しさを表現するために、オレンジをメインカラーとして使用しました。背景にはグレーを使用して情報を見やすく整理し、アクセントとしてグリーンを使うことで食材や健康的なイメージを表現しました。",
+            colors: ["#ff8f05", "#f0f0f0", "#0EA213"]
+          }
+        ]
+      },
+    
+  
+    {
+      title: "成果と学び",
+      sections: [
+        {
+          subTitle: "苦労したこと",
+          text: "デザインの段階では、トンマナ（トーン＆マナー）をそろえることを意識して作りました。Reactを勉強しながら制作したため、エラーの原因を調べる時や、自分が作りたいレイアウトを形にする時に時間がかかることもありました。特にレスポンシブデザインの調整はうまくいかないことが多く、大変でした。"
+        },
+        {
+          subTitle: "学んだこと",
+          text: "この課題では、トンマナを意識しながらデザインを考え、それをReactで形にしました。デザインとコーディングがどうつながっているのかを少しずつ理解できるようになりました。また、Reactを使う中で、コンポーネントの作り方や状態管理の仕組みについても学ぶことができました。"
+        }
+      ]
+    }
+     ],
+    // website: "https://recipe-own-media.vercel.app"
+
+  
   },
-
   {
     slug: "suga-shrine",
-    title: "Suga Shrine Guide",
-    desc: "『君の名は。』聖地巡礼のフォトガイドUI。",
-    image: "/projects/jinjya.png",
-    website: "https://www.figma.com/design/LnIU0KnD6xMUnPB7058d0R/app-design?node-id=0-1&t=9AUD2caWXCZWcV7E-1",
-    プロジェクトについて: "聖地巡礼で撮りたい写真を撮れるように情報をまとめたUIです。",
-    問題: "現地で角度や場所が分からず迷ってしまうことがありました。",
-    ゴール: "1画面で分かりやすく、次の行動に進める導線を作りました。",
-  },
+    title: "須賀神社フォトガイド Webサイト制作",
+    intro: (
+      <>
+        この作品は、映画『君の名は。』の聖地として知られる須賀神社を訪れる人に向けて、
+        写真スポットをわかりやすく紹介することを目的に制作したWebサイトです。
+        聖地巡礼をする観光客が、映画と同じ構図で写真を撮れるように
+        写真スポットや撮影ポイントを案内するガイドサイトとして企画しました。
+        <br />
+        <br />
+        本作品では、
+        <span className="accent">企画・デザイン・実装のすべてを一人で担当</span>
+        し、初めて訪れる人でも迷わずスポットを見つけられるよう、
+        写真を中心としたレイアウトとシンプルな導線設計を意識して制作しました。
+        また、スマートフォンでの利用を想定し、直感的に操作できるUIと
+        見やすい情報構成になるよう工夫しました。
+      </>
+    ),
+    period: "2025年◯月〜2025年◯月（約◯週間）",
+    role: "企画・UIデザイン・コーディング",
+    tools: [
+      "Figma",
+      "Illustrator",
+      "Photoshop",
+    ],
+    mainImage: "/projects/jinjya.png",
+  }
+  
 ];
 
 export default function ProjectDetails() {
@@ -60,93 +152,100 @@ export default function ProjectDetails() {
 
   if (!project) {
     return (
-      <div className="detail">
-        <Link to="/" className="back">← Back</Link>
-        <h2>Not found</h2>
-        <p>slug: {slug}</p>
-      </div>
+      <section className="projectDetail">
+        <div className="projectDetail__inner">
+          <Link to="/" className="projectDetail__back">
+            ← Back
+          </Link>
+          <h1 className="projectDetail__title">Project not found</h1>
+        </div>
+      </section>
     );
   }
 
   return (
-    <div className="detail">
-      <Link to="/" className="back">← Back</Link>
-
-      <h1 className="title">{project.title}</h1>
-      <p className="desc">{project.desc}</p>
-
-      <img className="image" src={project.image} alt={project.title} />
-
-      {/* プロジェクトについて */}
-      {project["プロジェクトについて"] && (
-        <div className="box">
-          <h3>プロジェクトについて</h3>
-          <p className="text">{project["プロジェクトについて"]}</p>
+    <section className="projectDetail">
+      <div className="projectDetail__inner">
+        <Link to="/" className="projectDetail__back">
+          ← Back
+        </Link>
+  
+        <div className="projectHero">
+          <div className="projectHero__text">
+            <h1 className="projectDetail__title">{project.title}</h1>
+  
+            <div className="projectDetail__intro">{project.intro}</div>
+  
+            <div className="projectMeta">
+              <div className="projectMeta__row">
+                <span className="projectMeta__label">期間</span>
+                <p className="projectMeta__text">{project.period}</p>
+              </div>
+  
+              <div className="projectMeta__row">
+                <span className="projectMeta__label">担当</span>
+                <p className="projectMeta__text">{project.role}</p>
+              </div>
+  
+              <div className="projectMeta__row">
+                <span className="projectMeta__label">ツール</span>
+                <div className="projectMeta__tools">
+                  {project.tools.map((tool) => (
+                    <span className="toolTag" key={tool}>
+                      {tool}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div className="projectHero__imageWrap">
+            <img
+              src={project.mainImage}
+              alt={project.title}
+              className="projectHero__image"
+            />
+          </div>
         </div>
-      )}
-
-      {/* 問題 */}
-      {project["問題"] && (
-        <div className="box">
-          <h3>問題</h3>
-          <p className="text">{project["問題"]}</p>
-        </div>
-      )}
-
-      {/* ゴール */}
-      {project["ゴール"] && (
-        <div className="box">
-          <h3>ゴール</h3>
-          <p className="text">{project["ゴール"]}</p>
-        </div>
-      )}
-
-      {/* プロセス */}
-      {project["プロセス"] && (
-        <div className="box">
-          <h3>プロセス</h3>
-          <ul className="list">
-            {project["プロセス"].map((item, i) => (
-              <li key={i}>{item}</li>
-            ))}
-          </ul>
-        </div>
-      )}
-
-      {/* 主な機能 */}
-      {project["主な機能"] && (
-        <div className="box">
-          <h3>主な機能</h3>
-          <ul className="list">
-            {project["主な機能"].map((item, i) => (
-              <li key={i}>{item}</li>
-            ))}
-          </ul>
-        </div>
-      )}
-
-      {/* 工夫 */}
-      {project.solution && (
-        <div className="box">
-          <h3>工夫・課題解決</h3>
-          <p className="text">{project.solution}</p>
-        </div>
-      )}
-
-      {/* 学び */}
-      {project.learnings && (
-        <div className="box">
-          <h3>学び</h3>
-          <p className="text">{project.learnings}</p>
-        </div>
-      )}
-
-      {/* Website */}
-      {project.website && (
-        <a className="btn" href={project.website} target="_blank" rel="noreferrer">
-          Websiteを見る
-        </a>
-      )}
-    </div>
+  
+        {project.sections?.map((section) => (
+          <div className="projectSection" key={section.title}>
+            <h2 className="projectSection__title">{section.title}</h2>
+  
+            {section.image && (
+              <img
+                src={section.image}
+                alt={section.title}
+                className="projectSection__image"
+              />
+            )}
+  
+            {section.list && (
+              <ul className="projectPointList">
+                {section.list.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            )}
+  
+            {section.text && (
+              <p className="projectSection__text">{section.text}</p>
+            )}
+  
+            {section.sections && (
+              <div className="projectSubSectionWrap">
+                {section.sections.map((item) => (
+                  <div className="projectSubSection" key={item.subTitle}>
+                    <h3 className="projectSubSection__title">{item.subTitle}</h3>
+                    <p className="projectSection__text">{item.text}</p>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
