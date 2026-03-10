@@ -1,153 +1,178 @@
-
+* {
+  box-sizing: border-box;
+}
 
 .projects {
-    padding: 80px 10%;
-    background: transparent;
-    text-align: center;
+  padding: 80px 20px;
+  background: #f5f5f5;
+  overflow-x: hidden;
+}
+
+.projects__title {
+  text-align: center;
+  font-size: 56px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.projects__title span {
+  color: #f47115;
+}
+
+.projects__subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin: 14px 0 48px;
+}
+
+.projectsGrid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.projectCard {
+  background: #fff;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.projectImg {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.projectBody {
+  padding: 24px 20px 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+}
+
+.projectTitle {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.3;
+  margin: 0 0 14px;
+  color: #111;
+}
+
+.projectDesc {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin: 0 0 20px;
+}
+
+.techTags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.techTags span {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #f3f3f3;
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+}
+
+.projectButtons {
+  margin-top: auto;
+}
+
+.btn.demoBtn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: #f47115;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.25s;
+}
+
+.btn.demoBtn:hover {
+  transform: translateY(-2px);
+}
+
+/* tablet */
+@media (max-width: 1023px) {
+  .projects {
+    padding: 72px 20px;
   }
-  
+
+  .projects__title {
+    font-size: 44px;
+  }
+
+  .projectsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+  .projects {
+    padding: 56px 16px;
+  }
+
   .projects__title {
     font-size: 34px;
-    font-weight: 900;
-    margin: 0;
   }
-  
-  .projects__title span {
-    color: #f47115;
-  }
-  
+
   .projects__subtitle {
-    color: #666;
-    margin: 14px 0 50px;
+    font-size: 16px;
+    margin: 12px 0 32px;
   }
-  
-  /* 3 x 2 */
+
   .projectsGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 26px;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
-  
-  .projectCard {
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-  
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-  
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
-  
-    transition: 0.3s;
-  }
-  
-  .projectCard:hover {
-    transform: translateY(-8px);
-  }
-  
+
   .projectImg {
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
+    height: 210px;
   }
-  
+
   .projectBody {
-    padding: 18px 18px 20px;
+    padding: 20px 16px 24px;
   }
-  
+
   .projectTitle {
-    margin: 0 0 10px;
-    font-size: 18px;
-    font-weight: 800;
+    font-size: 24px;
   }
-  
+
   .projectDesc {
-    margin: 0 0 14px;
-    font-size: 14px;
-    color: #555;
+    font-size: 15px;
     line-height: 1.7;
   }
-  
-  /* tags */
+
   .techTags span {
-    display: inline-block;
-    background: #f2f2f2;
-    padding: 6px 10px;
-    border-radius: 999px;
-    font-size: 12px;
-    margin: 0 6px 8px 0;
+    font-size: 13px;
+    padding: 7px 12px;
   }
-  
-  /* buttons */
-  .projectButtons {
-    display: flex;
-    gap: 10px;
-    margin-top: 12px;
-  }
-  
-  .btn {
-    flex: 1;
+
+  .btn.demoBtn {
+    width: 100%;
     text-align: center;
-    padding: 10px 12px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: 800;
-    font-size: 14px;
-    transition: 0.25s;
   }
-  
-  .codeBtn {
-    background: #f1f1f1;
-    color: #111;
-  }
-  
-  .demoBtn {
-    background: linear-gradient(135deg, #ff7b00, #f47115);
-    color: #fff;
-  }
-  
-  .btn:hover {
-    opacity: 0.9;
-  }
-  
-  /* responsive */
-  @media (max-width: 768px) {
-    .skills {
-      padding: 80px 6%;
-    }
-  
-    .skillsGrid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-    }
-  
-    .skills__title {
-      font-size: 30px;
-    }
-  
-    .skills__subtitle {
-      margin: 12px 0 40px;
-    }
-  
-    .skillCard {
-      padding: 16px;
-    }
-  
-    .skillIconBox {
-      width: 42px;
-      height: 42px;
-    }
-  
-    .skillIcon {
-      width: 24px;
-      height: 24px;
-    }
-  
-    .skillInfo h3 {
-      font-size: 15px;
-    }
-  
-    .skillBar {
-      height: 10px;
-    }
-  }
+}
