@@ -205,3 +205,91 @@
   box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
 
+
+/* ===== TABLET / MOBILE ===== */
+@media (max-width:768px){
+
+  .projectDetail{
+    padding:40px 16px 80px;
+  }
+  
+  .projectHero{
+    grid-template-columns:1fr;
+    grid-template-rows:auto;
+    gap:32px;
+  }
+  
+  /* title */
+  .projectDetail__title{
+    font-size:26px;
+    margin:20px 0 10px;
+  }
+  
+  /* intro text */
+  .projectDetail__intro{
+    font-size:16px;
+    line-height:1.9;
+  }
+  
+  /* meta area */
+  .projectMeta{
+    margin-top:32px;
+    gap:20px;
+  }
+  
+  .projectMeta__label{
+    font-size:16px;
+  }
+  
+  .projectMeta__text{
+    font-size:15px;
+  }
+  
+  .toolTag{
+    padding:8px 12px;
+    font-size:13px;
+  }
+  
+  /* image */
+  .projectHero__image{
+    border-radius:18px;
+  }
+  
+  /* section box */
+  .projectSection{
+    margin-top:48px;
+    padding:24px;
+  }
+  
+  .projectSection__title{
+    font-size:22px;
+  }
+  
+  .projectSection__text,
+  .projectPointList{
+    font-size:15px;
+    line-height:1.9;
+  }
+  
+  /* button */
+  .projectVisitBtn{
+    padding:12px 18px;
+    font-size:14px;
+  }
+  
+  /* link */
+  .projectLink{
+    font-size:16px;
+  }
+  
+  .projectBack{
+    margin-top:60px;
+  }
+  
+  .backIcon{
+    width:44px;
+    height:44px;
+    font-size:20px;
+  }
+  
+  }
