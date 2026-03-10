@@ -1,11 +1,12 @@
 
 import { useParams, Link } from "react-router-dom";
+import { IoArrowBack } from "react-icons/io5";
 import "./ProjectDetails.css";
 
 const projects = [
   {
     slug: "kikkoman-recipe",
-    title: "「カプセルレシピ」Webサイト制作",
+    title: "オウンドメディア『ホームクッキング通信』の新規制作",
     intro: (
       <>
         この作品は、献立に悩む一人暮らしの人や忙しい人に向けて、
@@ -264,7 +265,7 @@ const projects = [
       "Photoshop",
     ],
     mainImage: "/projects/osmo-fv.png",
-      website: "https://www.figma.com/design/39qzGC9TmJuadkswJH0K4u/%E3%82%B5%E3%82%A4%E3%83%88%E8%A8%AD%E8%A8%88?node-id=0-1&t=tQEOMayFqEIUYjq7-1",
+    website: "https://www.figma.com/design/39qzGC9TmJuadkswJH0K4u/%E3%82%B5%E3%82%A4%E3%83%88%E8%A8%AD%E8%A8%88?node-id=0-1&t=tQEOMayFqEIUYjq7-1",
     sections: [
       {
         title: "Request",
@@ -541,14 +542,30 @@ export default function ProjectDetails() {
   const { slug } = useParams();
   const project = projects.find((p) => p.slug === slug);
 
+  const handleBackToProjects = () => {
+    setTimeout(() => {
+      const projectsSection = document.getElementById("projects");
+      if (projectsSection) {
+        projectsSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  };
+
   if (!project) {
     return (
       <section className="projectDetail">
         <div className="projectDetail__inner">
-          <Link to="/" className="projectDetail__back">
-            ← Back
-          </Link>
           <h1 className="projectDetail__title">Project not found</h1>
+        </div>
+
+        <div className="projectBack">
+          <Link
+            to="/"
+            className="backIcon"
+            onClick={handleBackToProjects}
+          >
+            <IoArrowBack />
+          </Link>
         </div>
       </section>
     );
@@ -557,10 +574,6 @@ export default function ProjectDetails() {
   return (
     <section className="projectDetail">
       <div className="projectDetail__inner">
-        <Link to="/" className="projectDetail__back">
-          ← Back
-        </Link>
-
         <div className="projectHero">
           <h1 className="projectDetail__title">{project.title}</h1>
 
@@ -654,8 +667,19 @@ export default function ProjectDetails() {
           </div>
         ))}
       </div>
+
+      <div className="projectBack">
+        <Link
+          to="/"
+          className="backIcon"
+          onClick={handleBackToProjects}
+        >
+          <IoArrowBack />
+        </Link>
+      </div>
     </section>
   );
 }
+
 
 

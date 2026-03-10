@@ -1,14 +1,21 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import ProfilePage from "./components/ProfilePage";
 import ProjectDetails from "./components/ProjectDetails";
+import Navbar from "./components/Navbar";
 
-export default function App() {
+function App() {
   return (
-    <BrowserRouter>
+    <Router>
+      <ScrollToTop />
+      <Navbar />
+
       <Routes>
         <Route path="/" element={<ProfilePage />} />
         <Route path="/project/:slug" element={<ProjectDetails />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
+
+export default App;

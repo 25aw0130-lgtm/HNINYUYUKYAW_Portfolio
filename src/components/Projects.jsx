@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Projects.css";
-
+<section className="myallprojects" id="project"></section>
 const projects = [
   {
     slug: "kikkoman-recipe",
-    title: "Kikkoman Recipe",
+    title: "オウンドメディア『ホームクッキング通信』の新規制作",
     desc: "カプセルを回して楽しくレシピと出会えるサイト",
     tech: ["HTML", "CSS", "JavaScript"],
     image: "/projects/recipe-photo.png",

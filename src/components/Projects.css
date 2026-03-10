@@ -4,13 +4,13 @@
 
 .projects {
   padding: 80px 20px;
-  background: #f5f5f5;
+  background: transparent;
   overflow-x: hidden;
 }
 
 .projects__title {
   text-align: center;
-  font-size: 56px;
+  font-size: 34px;
   font-weight: 800;
   margin: 0;
   line-height: 1.2;

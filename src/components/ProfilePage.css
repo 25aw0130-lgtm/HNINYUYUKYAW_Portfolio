@@ -1,4 +1,14 @@
 /* ===== HERO ===== */
+
+.nameFurigana {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #1a1a1a;
+  margin-bottom: 0px;
+  letter-spacing: 30px;
+  padding-left: 30px;
+}
+
 .top {
   min-height: 100vh;
   width: 100%;
@@ -17,24 +27,28 @@
 
   display: flex;
   align-items: center;
-  justify-content: center;   /* ✅ real center */
-  gap: 0px;                 /* ✅ spacing instead of space-around */
+  justify-content: center;
+  /* ✅ real center */
+  gap: 0px;
+  /* ✅ spacing instead of space-around */
 }
 
 .top__left {
   flex: 1;
-  min-width: 0;              /* ✅ prevents overflow issues */
+  min-width: 0;
+  /* ✅ prevents overflow issues */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .top__name {
-  font-size: clamp(2.4rem, 4vw, 5rem);
+  font-size: clamp(28px, 5vw, 48px);
   font-weight: 900;
   line-height: 1.1;
   color: #1a1a1a;
   margin-bottom: 20px;
+  margin-top: 0;
   max-width: 520px;
 }
 
@@ -84,14 +98,16 @@
 }
 
 .top__right {
-  flex: 0 0 auto;            /* ✅ prevents weird stretching */
+  flex: 0 0 auto;
+  /* ✅ prevents weird stretching */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .top__photoCircle {
-  width: min(420px, 38vw);   /* ✅ responsive size */
+  width: min(420px, 38vw);
+  /* ✅ responsive size */
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   overflow: hidden;
@@ -123,9 +139,10 @@
 .sectionTitle span {
   color: #f47115;
 }
+
 .about {
   padding: 100px 10%;
-/
+  /
 }
 
 .about__box {
@@ -182,6 +199,7 @@
   line-height: 1.7;
   color: #333;
 }
+
 /* ===== CONTACT ===== */
 .contact {
   padding: 80px 10%;
@@ -232,6 +250,13 @@
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
+
+  .nameFurigana {
+    font-size: 12px;
+    letter-spacing: 12px;
+    padding-left: 12px;
+  }
+
   .top {
     padding: 60px 16px;
   }
@@ -263,6 +288,7 @@
     grid-template-columns: 1fr;
     gap: 14px;
   }
+
   .contact {
     padding: 80px 10%;
   }
