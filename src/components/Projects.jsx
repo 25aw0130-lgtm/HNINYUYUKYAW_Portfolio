@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Projects.css";
-<section className="myallprojects" id="project"></section>
+
 const projects = [
   {
     slug: "kikkoman-recipe",
