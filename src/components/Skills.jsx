@@ -1,13 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Skills.css";
+import { Icon } from "@iconify/react";
 
 const skills = [
-  { name: "Figma", icon: "/logos/figma.svg", percent: 90 },
-  { name: "VS Code", icon: "/logos/vscode.svg", percent: 88 },
-  { name: "React", icon: "/logos/react.svg", percent: 50 },
-  { name: "Illustrator", icon: "/logos/illustrator.svg", percent: 80 },
-  { name: "Photoshop", icon: "/logos/photoshop.svg", percent: 78 },
-  { name: "GitHub", icon: "/logos/github.svg", percent: 82 },
+  { name: "Figma", icon: "logos:figma", percent: 90 },
+  { name: "VS Code", icon: "logos:visual-studio-code", percent: 90 },
+  { name: "React", icon: "logos:react", percent: 50 },
+  { name: "Illustrator", icon: "logos:adobe-illustrator", percent: 80 },
+  { name: "Photoshop", icon: "logos:adobe-photoshop", percent: 78 },
+  { name: "GitHub", icon: "logos:github-icon", percent: 82 },
 ];
 
 export default function Skills() {
@@ -21,8 +22,8 @@ export default function Skills() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setAnimate(true);        // start animation
-          observer.unobserve(el);  // run once (remove this line if you want repeat)
+          setAnimate(true);
+          observer.unobserve(el);
         }
       },
       { threshold: 0.25 }
@@ -44,8 +45,9 @@ export default function Skills() {
           <div className="skillCard" key={s.name}>
             <div className="skillHeader">
               <div className="skillIconBox">
-                <img src={s.icon} alt={s.name} />
+                <Icon icon={s.icon} width="42" height="42" />
               </div>
+
               <div className="skillInfo">
                 <h3>{s.name}</h3>
                 <span>{s.percent}%</span>
@@ -53,7 +55,10 @@ export default function Skills() {
             </div>
 
             <div className="skillBar">
-              <div className="skillBarFill" style={{ width: animate ? `${s.percent}%` : "0%" }} />
+              <div
+                className="skillBarFill"
+                style={{ width: animate ? `${s.percent}%` : "0%" }}
+              />
             </div>
           </div>
         ))}

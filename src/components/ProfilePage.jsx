@@ -99,7 +99,7 @@ export default function ProfilePage() {
         <span className="about__icon">🌏</span>
         <div>
           <h3>Language</h3>
-          <p>日本語 / English</p>
+          <p>日本語 . 英語 . ミャンマー語</p>
         </div>
       </div>
     </div>

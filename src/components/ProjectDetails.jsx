@@ -32,6 +32,8 @@ const projects = [
       "JavaScript",
     ],
     mainImage: "/projects/recipe-fv.png",
+    website: "https://recipe-own-media.vercel.app",
+
     sections: [
       {
         title: "Request",
@@ -51,7 +53,7 @@ const projects = [
         ]
       },
       {
-        title: "リサーチ",
+        title: "Research",
         text: "献立を考えることに負担を感じている人や、毎回似たような料理になってしまう人を想定し、料理選びを前向きにできる仕組みを考えました。",
         // image: "/projects/recipe.png",
         sections: [
@@ -89,7 +91,7 @@ const projects = [
         title: "UI Design",
         text: "「楽しくレシピと出会える体験」をテーマにデザインしました。献立を考えることが負担になりがちな一人暮らしの人や忙しい人でも、ガチャを回すような感覚で料理を選べるようにすることで、料理選びそのものを楽しめる体験を目指しました。",
 
-        image: "/projects/recipe.png",
+        // image: "/projects/recipe.png",
 
         sections: [
           {
@@ -171,6 +173,7 @@ const projects = [
       "Photoshop",
     ],
     mainImage: "/projects/jinjya.png",
+    website: "https://www.figma.com/design/LnIU0KnD6xMUnPB7058d0R/app-design?node-id=0-1&t=Rju7MIWrdMNxj6VI-1",
 
     sections: [
       {
@@ -261,7 +264,7 @@ const projects = [
       "Photoshop",
     ],
     mainImage: "/projects/osmo-fv.png",
-
+      website: "https://www.figma.com/design/39qzGC9TmJuadkswJH0K4u/%E3%82%B5%E3%82%A4%E3%83%88%E8%A8%AD%E8%A8%88?node-id=0-1&t=tQEOMayFqEIUYjq7-1",
     sections: [
       {
         title: "Request",
@@ -379,6 +382,7 @@ const projects = [
       "OpenWeather API"
     ],
     mainImage: "/projects/weather-fv.png",
+    website: "https://weather-app-lemon-five-71.vercel.app",
     sections: [
       {
         title: "実装について",
@@ -447,6 +451,7 @@ const projects = [
       "UI Design"
     ],
     mainImage: "/projects/specialsite-fv.png",
+    website: "https://special-site-xi.vercel.app",
     sections: [
       {
         title: "Request",
@@ -583,6 +588,21 @@ export default function ProjectDetails() {
                   ))}
                 </div>
               </div>
+
+              {project.website && (
+                <div className="projectMeta__row">
+                  <span className="projectMeta__label">URL</span>
+                  <a
+                    href={project.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="projectLink"
+                  >
+                    <span className="projectLink__icon">🔗</span>
+                    {project.website}
+                  </a>
+                </div>
+              )}
             </div>
           </div>
 
@@ -623,7 +643,9 @@ export default function ProjectDetails() {
               <div className="projectSubSectionWrap">
                 {section.sections.map((item) => (
                   <div className="projectSubSection" key={item.subTitle}>
-                    <h3 className="projectSubSection__title">{item.subTitle}</h3>
+                    <h3 className="projectSubSection__title">
+                      {item.subTitle}
+                    </h3>
                     <p className="projectSection__text">{item.text}</p>
                   </div>
                 ))}
@@ -635,3 +657,5 @@ export default function ProjectDetails() {
     </section>
   );
 }
+
+

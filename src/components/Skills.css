@@ -38,6 +38,7 @@
   display: flex;
   align-items: center;
   gap: 14px;
+  margin-bottom: 14px;
 }
 
 .skillIconBox {
@@ -48,9 +49,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
-.skillIconBox img {
+.skillIcon {
   width: 26px;
   height: 26px;
 }
@@ -60,6 +62,7 @@
   align-items: baseline;
   justify-content: space-between;
   width: 100%;
+  gap: 10px;
 }
 
 .skillInfo h3 {
@@ -73,7 +76,7 @@
   color: #333;
 }
 
-.skillBar{
+.skillBar {
   width: 100%;
   height: 12px;
   background: #e9e9e9;
@@ -81,15 +84,25 @@
   overflow: hidden;
 }
 
-.skillBarFill{
+.skillBarFill {
   height: 100%;
   width: 0%;
   border-radius: 999px;
   background: #ff7a00;
-  transition: width 1200ms cubic-bezier(.2,.8,.2,1);
+  transition: width 1200ms cubic-bezier(.2, .8, .2, 1);
+}
+
+@media (max-width: 900px) {
+  .skillsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 480px) {
+  .skills {
+    padding: 80px 20px;
+  }
+
   .skillsGrid {
     grid-template-columns: 1fr;
   }

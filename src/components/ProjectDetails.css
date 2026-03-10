@@ -155,3 +155,24 @@
   transform: translateY(-2px);
 }
 
+.projectLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #56b3b4;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.projectLink:hover {
+  opacity: 0.8;
+}
+
+.projectLink__icon {
+  font-size: 22px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
