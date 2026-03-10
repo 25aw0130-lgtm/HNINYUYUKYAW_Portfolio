@@ -22,8 +22,8 @@
 .projectHero {
   display: grid;
   grid-template-columns: 1.05fr 1fr;
+  grid-template-rows: auto 1fr;
   gap: 48px;
-  align-items: center;
 }
 
 .projectHero__text {
@@ -36,6 +36,8 @@
   line-height: 1.2;
   font-weight: 800;
   color: #111;
+  grid-column: 1 / -1;
+  text-align: left;
 }
 
 .projectDetail__intro {
