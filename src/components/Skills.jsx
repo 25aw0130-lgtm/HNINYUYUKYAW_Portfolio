@@ -38,7 +38,7 @@ export default function Skills() {
       <h2 className="skills__title">
         My <span>Skills</span>
       </h2>
-      <p className="skills__subtitle">Tools & technologies I use</p>
+      <p className="skills__subtitle">使用ツール・技術</p>
 
       <div className="skillsGrid">
         {skills.map((s) => (

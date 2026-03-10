@@ -43,7 +43,7 @@ const projects = [
   //   title: "Portfolio Site",
   //   desc: "制作物を紹介するポートフォリオサイト",
   //   tech: ["React", "CSS"],
-  //   image: "/projects/portfolio.png",
+  //   image: "/projects/portfoliosite-photo.png",
   // },
 ];
 
@@ -53,7 +53,7 @@ export default function Projects() {
       <h2 className="projects__title">
         My <span>Projects</span>
       </h2>
-      <p className="projects__subtitle">A showcase of my recent work</p>
+      <p className="projects__subtitle">最近の制作実績</p>
 
       <div className="projectsGrid">
         {projects.map((p) => (

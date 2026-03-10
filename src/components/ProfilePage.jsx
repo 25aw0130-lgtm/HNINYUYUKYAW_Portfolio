@@ -16,7 +16,7 @@ export default function ProfilePage() {
             <div className="top__left">
               <p className="nameFurigana">ニン ユ　ユ チョ</p>
               <h1 className="top__name">HNIN YU YU KYAW</h1>
-              <p className="top__role">フロントエンドエンジニア希望</p>
+              <p className="top__role">フロントエンドエンジニア</p>
 
               <p className="top__catch">
                 使う人の笑顔を大切に、心地よい体験を
