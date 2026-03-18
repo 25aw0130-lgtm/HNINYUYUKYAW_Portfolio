@@ -184,7 +184,7 @@ const projects = [
       },
 
       {
-        title: "リサーチ",
+        title: "Research",
         sections: [
           {
             subTitle: "現地観察",
@@ -558,7 +558,7 @@ const projects = [
         視覚的にも印象に残るサイトを目指しました。
       </>
     ),
-    period: "2026年1月〜2026年2月",
+    period: "2026年2月〜2026年3月6日",
     role: "設計・UIデザイン・フロントエンド実装",
     tools: ["React", "CSS", "JavaScript", "Figma"],
     mainImage: "/projects/portfolio-fv.png",
