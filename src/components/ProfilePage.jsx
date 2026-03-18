@@ -123,7 +123,7 @@ export default function ProfilePage() {
           </p>
 
           <div className="contactLinks">
-            <a href="mailto:yourmail@example.com" className="contactBtn">
+            <a href="mailto:hyykbaek04@gmail.com" className="contactBtn">
               Email
             </a>
 
