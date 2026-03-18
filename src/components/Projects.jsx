@@ -38,13 +38,13 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     image: "/projects/specialsite-photo.png",
   },
-  // {
-  //   slug: "portfolio",
-  //   title: "Portfolio Site",
-  //   desc: "制作物を紹介するポートフォリオサイト",
-  //   tech: ["React", "CSS"],
-  //   image: "/projects/portfoliosite-photo.png",
-  // },
+  {
+    slug: "portfolio",
+    title: "Portfolio Site",
+    desc: "制作物を紹介するポートフォリオサイト",
+    tech: ["React", "CSS"],
+    image: "/projects/portfoliosite-photo.png",
+  },
 ];
 
 export default function Projects() {
