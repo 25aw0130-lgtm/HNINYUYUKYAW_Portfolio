@@ -173,7 +173,7 @@ const projects = [
       "Illustrator",
       "Photoshop",
     ],
-    mainImage: "/projects/jinjya.png",
+    mainImage: "/projects/jinja-fv.png",
     website: "https://www.figma.com/design/LnIU0KnD6xMUnPB7058d0R/app-design?node-id=0-1&t=Rju7MIWrdMNxj6VI-1",
 
     sections: [
