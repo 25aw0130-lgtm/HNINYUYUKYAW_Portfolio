@@ -33,7 +33,7 @@ const projects = [
       "JavaScript",
     ],
     mainImage: "/projects/recipe-fv.png",
-    website: "https://recipe-own-media.vercel.app",
+    website: "https://recipe-own-media-project.vercel.app",
 
     sections: [
       {
