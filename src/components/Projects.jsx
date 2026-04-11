@@ -6,7 +6,7 @@ const projects = [
   {
     slug: "kikkoman-recipe",
     title: "オウンドメディア『ホームクッキング通信』の新規制作",
-    desc: "カプセルを回して楽しくレシピと出会えるサイト",
+    desc: "カプセルを回し,楽しくレシピと出会えるサイト",
     tech: ["HTML", "CSS", "JavaScript"],
     image: "/projects/recipe-photo.png",
   },

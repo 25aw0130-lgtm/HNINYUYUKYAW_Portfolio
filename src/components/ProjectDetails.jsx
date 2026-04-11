@@ -34,7 +34,7 @@ const projects = [
     ],
     mainImage: "/projects/recipe-fv.png",
     website: "https://recipe-own-media-project.vercel.app",
-
+    github: "https://github.com/25aw0130-lgtm/recipe-own-media",
     sections: [
       {
         title: "Request",
@@ -132,11 +132,12 @@ const projects = [
         sections: [
           {
             subTitle: "苦労したこと",
-            text: "デザインの段階では、トンマナ（トーン＆マナー）をそろえることを意識して作りました。Reactを勉強しながら制作したため、エラーの原因を調べる時や、自分が作りたいレイアウトを形にする時に時間がかかることもありました。特にレスポンシブデザインの調整はうまくいかないことが多く、大変でした。"
+            text: "デザインの段階では、トンマナ（トーン＆マナー）を統一することを意識して制作しました。自分のイメージしているレイアウトを実際の形に落とし込む過程では試行錯誤が多く、特にレスポンシブデザインの調整に苦労しました。また、レシピを分かりやすく表示するためにモーダルを取り入れましたが、見やすさと操作性の両方を意識して調整する必要があり、何度も修正を重ねました。その中で、画面サイズごとにバランスを整える難しさを実感しました。"
           },
           {
             subTitle: "学んだこと",
-            text: "この課題では、トンマナを意識しながらデザインを考え、それをReactで形にしました。デザインとコーディングがどうつながっているのかを少しずつ理解できるようになりました。また、Reactを使う中で、コンポーネントの作り方や状態管理の仕組みについても学ぶことができました。"
+            text: "この制作を通して、トンマナを意識しながらデザインを考え、それをWebサイトとして形にする一連の流れを学びました。また、デザインとコーディングがどのようにつながっているのかを理解することができました。さらに、ユーザーにとって見やすく使いやすいレイアウトを考える重要性を実感しました。"
+
           }
         ]
       }
@@ -563,6 +564,7 @@ const projects = [
     tools: ["React", "CSS", "JavaScript", "Figma"],
     mainImage: "/projects/portfolio-fv.png",
     website: "https://hninyuyukyaw-portfolio.vercel.app",
+    github: "https://github.com/25aw0130-lgtm/HNINYUYUKYAW_Portfolio",
 
 
     sections: [
@@ -706,6 +708,20 @@ export default function ProjectDetails() {
                   >
                     <span className="projectLink__icon">🔗</span>
                     {project.website}
+                  </a>
+                </div>
+              )}
+              {project.github && (
+                <div className="projectMeta__row">
+                  <span className="projectMeta__label">GitHub</span>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="projectLink"
+                  >
+                    <span className="projectLink__icon">💻</span>
+                    {project.github}
                   </a>
                 </div>
               )}
