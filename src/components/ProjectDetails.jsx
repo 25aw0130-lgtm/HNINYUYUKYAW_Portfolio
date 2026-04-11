@@ -559,7 +559,7 @@ const projects = [
         視覚的にも印象に残るサイトを目指しました。
       </>
     ),
-    period: "2026年2月〜2026年3月6日",
+    period: "2026年3月〜2026年4月",
     role: "設計・UIデザイン・フロントエンド実装",
     tools: ["React", "CSS", "JavaScript", "Figma"],
     mainImage: "/projects/portfolio-fv.png",

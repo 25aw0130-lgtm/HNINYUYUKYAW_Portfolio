@@ -5,10 +5,10 @@ import { Icon } from "@iconify/react";
 const skills = [
   { name: "Figma", icon: "logos:figma", percent: 90 },
   { name: "VS Code", icon: "logos:visual-studio-code", percent: 90 },
-  { name: "React", icon: "logos:react", percent: 50 },
+  { name: "React", icon: "logos:react", percent: 60 },
   { name: "Illustrator", icon: "logos:adobe-illustrator", percent: 80 },
-  { name: "Photoshop", icon: "logos:adobe-photoshop", percent: 78 },
-  { name: "GitHub", icon: "logos:github-icon", percent: 82 },
+  { name: "Photoshop", icon: "logos:adobe-photoshop", percent: 80 },
+  { name: "GitHub", icon: "logos:github-icon", percent: 90 },
 ];
 
 export default function Skills() {
