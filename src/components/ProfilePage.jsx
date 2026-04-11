@@ -49,8 +49,6 @@ export default function ProfilePage() {
           </h2>
 
           <div className="about__box">
-
-            {/* Left text */}
             <div className="about__text">
               <p>
                 私は、ユーザー視点を大切にしたフロントエンド開発を強みとするフロントエンドエンジニアです。
@@ -106,10 +104,7 @@ export default function ProfilePage() {
             </div>
           </div>
         </section>
-        {/* ===== SKILLS ===== */}
         <Skills />
-
-        {/* ===== PROJECTS ===== */}
         <Projects />
 
         {/* ===== CONTACT ===== */}
