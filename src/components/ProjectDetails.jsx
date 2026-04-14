@@ -316,7 +316,7 @@ const projects = [
       {
         title: "UI Design",
         text: "ユーザーがストーリーとして自然に読み進められるように、スマートフォンでの撮影の課題からOsmo Pocket 3の価値に気づく流れを意識してUIを設計しました。特に、子どもとの時間をテーマにしたビジュアルを使用し、共感しながら読み進められる体験を目指しました。",
-        image: "/projects/osmo-ui.png",
+      
         sections: [
           {
             subTitle: "ストーリー型レイアウト",
