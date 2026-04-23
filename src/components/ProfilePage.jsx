@@ -101,6 +101,14 @@ export default function ProfilePage() {
                   <p>日本語 ・ 英語 ・ ミャンマー語</p>
                 </div>
               </div>
+
+              <div className="about__item">
+                
+                <div>
+                  <h3>Hobby</h3>
+                  <p>本・旅行</p>
+                </div> 
+              </div>
             </div>
           </div>
         </section>
