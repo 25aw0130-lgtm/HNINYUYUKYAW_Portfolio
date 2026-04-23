@@ -73,18 +73,19 @@ export default function ProfilePage() {
               <div className="about__item">
                 
                 <div>
-                  <h3>School</h3>
+                  <h3>Education</h3>
                   <p>日本電子専門学校</p>
-                </div>
-              </div>
-
-              <div className="about__item">
-                
-                <div>
-                  <h3>Department</h3>
                   <p>Webデザイン科</p>
                 </div>
               </div>
+
+              {/* <div className="about__item"> */}
+                
+                {/* <div>
+                  <h3>Department</h3>
+                  <p>Webデザイン科</p>
+                </div> */}
+              {/* </div> */}
 
               <div className="about__item">
                 <div>
