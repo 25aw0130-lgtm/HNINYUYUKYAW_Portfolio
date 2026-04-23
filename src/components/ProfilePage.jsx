@@ -71,7 +71,7 @@ export default function ProfilePage() {
 
             <div className="about__infoRow">
               <div className="about__item">
-                <span className="about__icon">🎓</span>
+                
                 <div>
                   <h3>School</h3>
                   <p>日本電子専門学校</p>
@@ -79,7 +79,7 @@ export default function ProfilePage() {
               </div>
 
               <div className="about__item">
-                <span className="about__icon">💻</span>
+                
                 <div>
                   <h3>Department</h3>
                   <p>Webデザイン科</p>
@@ -87,7 +87,6 @@ export default function ProfilePage() {
               </div>
 
               <div className="about__item">
-                <span className="about__icon">⚡</span>
                 <div>
                   <h3>Strength</h3>
                   <p>行動力・コミュニケーション力</p>
@@ -95,7 +94,7 @@ export default function ProfilePage() {
               </div>
 
               <div className="about__item">
-                <span className="about__icon">🌏</span>
+                
                 <div>
                   <h3>Language</h3>
                   <p>日本語 ・ 英語 ・ ミャンマー語</p>
