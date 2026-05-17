@@ -50,7 +50,6 @@ export default function Skills() {
 
               <div className="skillInfo">
                 <h3>{s.name}</h3>
-                /* {/* <span>{s.percent}%</span>// */} */
               </div>
             </div>
 
