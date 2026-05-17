@@ -3,12 +3,12 @@ import "./Skills.css";
 import { Icon } from "@iconify/react";
 
 const skills = [
-  { name: "Figma", icon: "logos:figma", percent: 90 },
-  { name: "VS Code", icon: "logos:visual-studio-code", percent: 90 },
+  { name: "Figma", icon: "logos:figma" },
+  { name: "VS Code", icon: "logos:visual-studio-code" },
   { name: "React", icon: "logos:react", percent: 60 },
-  { name: "Illustrator", icon: "logos:adobe-illustrator", percent: 80 },
-  { name: "Photoshop", icon: "logos:adobe-photoshop", percent: 80 },
-  { name: "GitHub", icon: "logos:github-icon", percent: 90 },
+  { name: "Illustrator", icon: "logos:adobe-illustrator"},
+  { name: "Photoshop", icon: "logos:adobe-photoshop"},
+  { name: "GitHub", icon: "logos:github-icon"},
 ];
 
 export default function Skills() {
