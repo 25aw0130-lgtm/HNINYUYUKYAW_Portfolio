@@ -3,12 +3,12 @@ import "./Skills.css";
 import { Icon } from "@iconify/react";
 
 const skills = [
-  { name: "Figma", icon: "logos:figma" },
-  { name: "VS Code", icon: "logos:visual-studio-code" },
-  { name: "React", icon: "logos:react", percent: 60 },
-  { name: "Illustrator", icon: "logos:adobe-illustrator"},
-  { name: "Photoshop", icon: "logos:adobe-photoshop"},
-  { name: "GitHub", icon: "logos:github-icon"},
+  { name: "Figma", icon: "logos:figma", width: "60%" },
+  { name: "VS Code", icon: "logos:visual-studio-code", width: "60%" },
+  { name: "React", icon: "logos:react", width: "60%" },
+  { name: "Illustrator", icon: "logos:adobe-illustrator", width: "60%" },
+  { name: "Photoshop", icon: "logos:adobe-photoshop", width: "60%" },
+  { name: "GitHub", icon: "logos:github-icon", width: "60%" },
 ];
 
 export default function Skills() {
@@ -57,7 +57,10 @@ export default function Skills() {
             <div className="skillBar">
               <div
                 className="skillBarFill"
-                style={{ width: animate ? `${s.percent}%` : "0%" }}
+                //style={{ width: animate ? `${s.percent}%` : "0%" }}//
+               style={{ width: animate ? s.width : "0%" }}
+
+                
               />
             </div>
           </div>
