@@ -79,14 +79,6 @@ export default function ProfilePage() {
                 </div>
               </div>
 
-              {/* <div className="about__item"> */}
-                
-                {/* <div>
-                  <h3>Department</h3>
-                  <p>Webデザイン科</p>
-                </div> */}
-              {/* </div> */}
-
               <div className="about__item">
                 <div>
                   <h3>Strength</h3>
