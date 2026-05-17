@@ -47,8 +47,8 @@ export default function Navbar() {
 
       <nav className={`nav__links ${menuOpen ? "open" : ""}`}>
         <button onClick={() => handleNavClick("about")}>About</button>
-        <button onClick={() => handleNavClick("projects")}>Skills</button>
-        <button onClick={() => handleNavClick("skills")}>Projects</button>
+        <button onClick={() => handleNavClick("skills")}>Skills</button>
+        <button onClick={() => handleNavClick("projects")}>Projects</button>
         <button onClick={() => handleNavClick("contact")}>Contact</button>
       </nav>
     </header>
